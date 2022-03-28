@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="titulo_container">
+        Calculadora Simple
+      </h1>
+
+      <!-- Cuadro de introduccion de los numeros -->
+      <div class="primer_cuadro">
+        <input id="x" class="number" type="number" value="0">
+        <span id="actualizar"> + </span>
+        <input id="y" class="number" type="number" value="0">
+
+        <input id="btn_calc" class="btn act" type="button" name="" value="Calcular">
+      </div>
+      
+      <!-- Segundo cuadro, para preferencias -->
+      <div class="segundo_cuadro">
+        <p class="descriptivo">
+          Operación: 
+        </p>
+  
+        <div class="seleccion">
+          <select id="operador" class="select" name="">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="x">Multiplicación</option>
+            <option value="/">Divición</option>
+          </select>
+        </div>
+      </div>
+
+
+      <!-- Tercer cuadro, para los resultados -->
+      <div class="resultados">
+        <!-- <h2 class="titulo_resultados">
+          Resultados:
+        </h2>
+
+        <p id="contenedor_resultados"></p>
+        <p id="btn_space"></p> -->
+      </div>
+
+    </div>
+
+    <script src="class.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
